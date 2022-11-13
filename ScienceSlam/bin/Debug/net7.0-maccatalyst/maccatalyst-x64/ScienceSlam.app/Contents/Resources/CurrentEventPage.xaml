@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScienceSlam.CurrentEventPage"
+             Title="CurrentEventPage"
+             xmlns:viewmodel="clr-namespace:ScienceSlam"
+             x:DataType="viewmodel:CurrentEventPageModel">
+     <ScrollView>
+            <VerticalStackLayout>
+                <Label
+                    Grid.Column="1"
+                    Padding="30,5,0,0"
+                    Text="Текущий спикер"
+                    HorizontalOptions="Start"
+                    FontSize="34"
+                    FontFamily="Poppins"
+                    FontAttributes="Bold"
+                    VerticalOptions="Center" 
+                    />
+                <Grid
+                     RowDefinitions="Auto"
+                     ColumnDefinitions=".20*, .60*, .20*"
+                     MaximumWidthRequest="300"
+                     Margin="0,10,0,30"
+                    >
+                    <ImageButton
+                        Source="right_arrow.png"
+                        HeightRequest="40"
+                       />
+
+                    <Image
+                    Grid.Column="1"
+                    Source="avatar.png"
+                    HeightRequest="230"
+                
+                    />
+
+                   <ImageButton
+                       Grid.Column="2"
+                        HeightRequest="40"
+                        Source="left_arrow.png"/>
+
+                </Grid>
+                <Label
+                    x:Name="SpeakerName"
+                    FontSize="34"
+                    FontAttributes="Bold"
+                    FontFamily="Poppins"
+                    HorizontalOptions="Center"
+                    Text="Джордан Белфорт"
+                    Margin="0,-20,0,10"/>
+
+                <Line
+                    Stroke="#838383"
+                    X2="320"
+                    Margin="40,0,0,0"
+                    StrokeThickness="2"
+                    />
+
+                <Label
+                    Margin="0,10,0,0"
+                    TextTransform="Uppercase"
+                    Text="Спекуляции на бирже"
+                    HorizontalTextAlignment="Center"
+                    FontSize="18"
+                    />
+                <Label
+                    Margin="0,10,0,5"
+                    TextTransform="None"
+                    Text="Материалы"
+                    HorizontalTextAlignment="Center"
+                    FontSize="18"
+                    TextColor="#FE904B"
+                    FontFamily="PoppinsRegular"
+                    FontAttributes="Bold"
+
+                    />
+                <ScrollView
+                    Margin="0,0,0,0"
+                    WidthRequest="1000">
+
+                <CollectionView
+                    HeightRequest="200"
+                    WidthRequest="500">
+                    <CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Презентация.pptx</x:String>
+                        <x:String>Исследование.pdf</x:String>
+                        <x:String>Источники.docx</x:String>
+                        <x:String>...</x:String>
+                    </x:Array>
+                    </CollectionView.ItemsSource>
+
+                    <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame
+                            CornerRadius="14"
+                            WidthRequest="300"
+                            HeightRequest="40"
+                            Padding="0,0,0,0"
+                            Margin="0,0,0,20">
+                                <Label
+                                    Text="{Binding .}"
+                                    FontSize="14"
+                                    FontFamily="PoppinsRegular"
+                                    Margin="20,0,25,0"
+                                    VerticalTextAlignment="Center"
+                                    HorizontalTextAlignment="Center"/>
+                        </Frame>
+                    </DataTemplate>
+
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                </ScrollView>
+                <Button
+                    Command="{Binding MoveToMainPageCommand}"
+                    Margin="0,20,0,0"
+                    WidthRequest="330"
+                    HeightRequest="60"
+                    CornerRadius="14"
+                    Text="Перейти к голосованию"
+                    FontSize="17"
+                    FontAttributes="Bold"
+                    />
+
+          
+            </VerticalStackLayout>  
+    </ScrollView>
+</ContentPage>

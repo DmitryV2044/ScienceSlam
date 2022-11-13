@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScienceSlam.VotePage"
+             Title="VotePage"
+              xmlns:viewmodel="clr-namespace:ScienceSlam"
+             x:DataType="viewmodel:VotePageModel">
+    <VerticalStackLayout>
+         <Label
+            Grid.Column="1"
+            Padding="30,5,0,0"
+            Text="Оцените спикера"
+            HorizontalOptions="Start"
+            FontSize="34"
+            FontFamily="Poppins"
+            FontAttributes="Bold"
+            VerticalOptions="Center"
+                    />
+        <Image
+        Grid.Column="1"
+        Source="avatar.png"
+        HeightRequest="230"
+        Margin="0,0,0,10"
+        />
+        <Line
+            Stroke="#838383"
+            X2="320"
+            Margin="40,0,10,0"
+            StrokeThickness="2"/>
+
+        <Label
+            Text="Aктуальность темы"
+            FontFamily="PoppinsRegular"
+            FontSize="15"
+            HorizontalTextAlignment="Center"
+            Margin="0,10,0,0"/>
+        <Grid
+            RowDefinitions="60"
+            ColumnDefinitions=".10*, .16*, .16*, .16*, .16*, .16*, .10*"
+            Margin="0,0,0,0"
+            MaximumWidthRequest="1000">
+
+            <Frame
+                Grid.Column="1"
+                CornerRadius="14"
+                WidthRequest="40"
+                HeightRequest="40"
+                Padding="17,7,0,0"
+                Margin="0,0,0,0"
+                BackgroundColor="#B2ABA6"
+                >
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding VoteForParamCommand}">
+
+
+                    </TapGestureRecognizer>
+
+                </Frame.GestureRecognizers>
+            <Label
+                Text="1"
+                FontSize="17"
+                FontAttributes="Bold"
+                FontFamily="PoppinsBold"
+                />
+                        
+            </Frame>
+            <Frame
+                Grid.Column="2"
+                CornerRadius="14"
+                WidthRequest="40"
+                HeightRequest="40"
+                Padding="15,7,0,0"
+                Margin="0,0,0,0"
+                BackgroundColor="#B2ABA6"
+                >
+            <Label
+                Text="2"
+                FontSize="17"
+                FontAttributes="Bold"
+                FontFamily="PoppinsBold"
+                />
+                        
+            </Frame>
+
+            <Frame
+                Grid.Column="3"
+                CornerRadius="14"
+                WidthRequest="40"
+                HeightRequest="40"
+                Padding="14,7,0,0"
+                Margin="0,0,0,0"
+                BackgroundColor="#B2ABA6"
+                >
+            <Label
+                Text="3"
+                FontSize="17"
+                FontAttributes="Bold"
+                FontFamily="PoppinsBold"
+                />           
+            </Frame>
+           <Button
+               x:Name="first_param"
+                Grid.Column="4"
+                CornerRadius="14"
+                WidthRequest="40"
+                HeightRequest="40"
+                Padding="0,5,2,0"
+                Margin="0,0,0,0"
+                BackgroundColor="#B2ABA6"
+                Text="4"
+                FontSize="17"
+                FontAttributes="Bold"
+                FontFamily="PoppinsBold"
+                TextColor="{StaticResource Gray900}"
+               Clicked="FistParamClicked"
+                >
+           </Button>          
+            <Frame
+                Grid.Column="5"
+                CornerRadius="14"
+                WidthRequest="40"
+                HeightRequest="40"
+                Padding="14,7,0,0"
+                Margin="0,0,0,0"
+                BackgroundColor="#B2ABA6"
+                >
+            <Label
+                Text="5"
+                FontSize="17"
+                FontAttributes="Bold"
+                FontFamily="PoppinsBold"
+                />           
+            </Frame>
+             
+
+        </Grid>
+        <Line
+            Stroke="#838383"
+            X2="320"
+            Margin="40,0,10,0"
+            StrokeThickness="1"/>
+
+        <Label
+            Text="Артистизм"
+            FontFamily="PoppinsRegular"
+            FontSize="15"
+            HorizontalTextAlignment="Center"
+            Margin="0,10,0,0"/>
+        <Grid
+            RowDefinitions="60"
+            ColumnDefinitions=".10*, .16*, .16*, .16*, .16*, .16*, .10*"
+            Margin="0,0,0,0"
+            MaximumWidthRequest="1000">
+
+            <Frame
+                Grid.Column="1"
+                CornerRadius="14"
+                WidthRequest="40"
+                HeightRequest="40"
+                Padding="17,7,0,0"
+                Margin="0,0,0,0"
+                BackgroundColor="#B2ABA6"
+                >
+            <Label
+                Text="1"
+                FontSize="17"
+                FontAttributes="Bold"
+                FontFamily="PoppinsBold"
+                />
+                        
+            </Frame>
+            <Frame
+                Grid.Column="2"
+                CornerRadius="14"
+                WidthRequest="40"
+                HeightRequest="40"
+                Padding="15,7,0,0"
+                Margin="0,0,0,0"
+                BackgroundColor="#B2ABA6"
+                >
+            <Label
+                Text="2"
+                FontSize="17"
+                FontAttributes="Bold"
+                FontFamily="PoppinsBold"
+                />
+                        
+            </Frame>
+
+            <Button
+               x:Name="SecondParam"
+                Grid.Column="3"
+                CornerRadius="14"
+                WidthRequest="40"
+                HeightRequest="40"
+                Padding="0,5,2,0"
+                Margin="0,1,0,0"
+                BackgroundColor="#B2ABA6"
+                Text="3"
+                FontSize="17"
+                FontAttributes="Bold"
+                FontFamily="PoppinsBold"
+                TextColor="{StaticResource Gray900}"
+               Clicked="SecondParamClicked">
+           </Button>
+           <Frame
+                Grid.Column="4"
+                CornerRadius="14"
+                WidthRequest="40"
+                HeightRequest="40"
+                Padding="14,7,0,0"
+                Margin="0,0,0,0"
+                BackgroundColor="#B2ABA6"
+                >
+           <Label
+                Text="4"
+                FontSize="17"
+                FontAttributes="Bold"
+                FontFamily="PoppinsBold"
+                />           
+           </Frame>
+
+                       <Frame
+                Grid.Column="5"
+                CornerRadius="14"
+                WidthRequest="40"
+                HeightRequest="40"
+                Padding="14,7,0,0"
+                Margin="0,0,0,0"
+                BackgroundColor="#B2ABA6"
+                >
+           <Label
+                Text="5"
+                FontSize="17"
+                FontAttributes="Bold"
+                FontFamily="PoppinsBold"
+                />           
+           </Frame>
+
+             
+
+        </Grid>
+        <Line
+            Stroke="#838383"
+            X2="320"
+            Margin="40,0,10,0"
+            StrokeThickness="1"/>
+
+        <Label
+            Text="Общее впечатление"
+            FontFamily="PoppinsRegular"
+            FontSize="15"
+            HorizontalTextAlignment="Center"
+            Margin="0,10,0,0"/>
+        <Grid
+            RowDefinitions="60"
+            ColumnDefinitions=".10*, .16*, .16*, .16*, .16*, .16*, .10*"
+            Margin="0,0,0,0"
+            MaximumWidthRequest="1000">
+
+            <Frame
+                Grid.Column="1"
+                CornerRadius="14"
+                WidthRequest="40"
+                HeightRequest="40"
+                Padding="17,7,0,0"
+                Margin="0,0,0,0"
+                BackgroundColor="#B2ABA6"
+                >
+            <Label
+                Text="1"
+                FontSize="17"
+                FontAttributes="Bold"
+                FontFamily="PoppinsBold"
+                />
+                        
+            </Frame>
+            <Frame
+                Grid.Column="2"
+                CornerRadius="14"
+                WidthRequest="40"
+                HeightRequest="40"
+                Padding="15,7,0,0"
+                Margin="0,0,0,0"
+                BackgroundColor="#B2ABA6"
+                >
+            <Label
+                Text="2"
+                FontSize="17"
+                FontAttributes="Bold"
+                FontFamily="PoppinsBold"
+                />
+                        
+            </Frame>
+
+            <Frame
+                Grid.Column="3"
+                CornerRadius="14"
+                WidthRequest="40"
+                HeightRequest="40"
+                Padding="14,7,0,0"
+                Margin="0,0,0,0"
+                BackgroundColor="#B2ABA6"
+                >
+            <Label
+                Text="3"
+                FontSize="17"
+                FontAttributes="Bold"
+                FontFamily="PoppinsBold"
+                />           
+            </Frame>
+           <Frame
+                Grid.Column="4"
+                CornerRadius="14"
+                WidthRequest="40"
+                HeightRequest="40"
+                Padding="14,7,0,0"
+                Margin="0,0,0,0"
+                BackgroundColor="#B2ABA6"
+                >
+           <Label
+                Text="4"
+                FontSize="17"
+                FontAttributes="Bold"
+                FontFamily="PoppinsBold"
+                />           
+           </Frame>
+
+           <Button
+               x:Name="ThirdParam"
+                Grid.Column="5"
+                CornerRadius="14"
+                WidthRequest="40"
+                HeightRequest="40"
+                Padding="0,5,2,0"
+                Margin="0,1,0,0"
+                BackgroundColor="#B2ABA6"
+                Text="5"
+                FontSize="17"
+                FontAttributes="Bold"
+                FontFamily="PoppinsBold"
+                TextColor="{StaticResource Gray900}"
+               Clicked="ThirdParamClicked"
+                />
+
+
+        </Grid>
+        <Line
+            Stroke="#838383"
+            X2="320"
+            Margin="40,0,10,0"
+            StrokeThickness="1"/>
+
+        <Button
+            Command="{Binding SendDataCommand}"
+            WidthRequest="330"
+            HeightRequest="60"
+            CornerRadius="14"
+            Text="Отправить"
+            FontSize="17"
+            Margin="0,50,0,0"
+            FontAttributes="Bold"
+            />
+
+        <!--<ScrollView
+            Margin="0,0,0,0"
+            WidthRequest="1000">
+
+            <CollectionView
+                HeightRequest="500"
+                WidthRequest="500">
+                <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Артистичность выступления</x:String>
+                    <x:String>Актуальность темы</x:String>
+                    <x:String>Общее впечатление</x:String>
+                    <x:String>Другой критерий</x:String>
+                </x:Array>
+                </CollectionView.ItemsSource>
+
+                <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame>
+                        <Grid
+                            RowDefinitions="60"
+                            ColumnDefinitions=".20*, .20*, .20*, .20*, .20*"
+                            Margin="30,0,0,0"
+                            WidthRequest="500"
+                            >
+                            <Frame
+                                CornerRadius="14"
+                                WidthRequest="40"
+                                HeightRequest="40"
+                                Padding="17,7,0,0"
+                                Margin="80,0,0,0"
+                                BackgroundColor="#B2ABA6"
+                                >
+
+                                <Label
+                                    Text="1"
+                                    FontSize="17"
+                                    FontAttributes="Bold"
+                                    FontFamily="PoppinsBold"
+                                    />
+                        
+                            </Frame>
+
+                        </Grid>
+                    
+
+                    </Frame>
+                </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            </ScrollView>-->
+    </VerticalStackLayout>
+</ContentPage>

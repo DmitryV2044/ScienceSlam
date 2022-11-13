@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ScienceSlam</name>
+    </assembly>
+    <members>
+        <member name="F:ScienceSlam.CurrentEventPageAltModel.moveToMainPageCommand">
+            <summary>The backing field for <see cref="P:ScienceSlam.CurrentEventPageAltModel.MoveToMainPageCommand"/>.</summary>
+        </member>
+        <member name="P:ScienceSlam.CurrentEventPageAltModel.MoveToMainPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ScienceSlam.CurrentEventPageAltModel.MoveToMainPage"/>.</summary>
+        </member>
+        <member name="F:ScienceSlam.CurrentEventPageModel.moveToMainPageCommand">
+            <summary>The backing field for <see cref="P:ScienceSlam.CurrentEventPageModel.MoveToMainPageCommand"/>.</summary>
+        </member>
+        <member name="P:ScienceSlam.CurrentEventPageModel.MoveToMainPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ScienceSlam.CurrentEventPageModel.MoveToMainPage"/>.</summary>
+        </member>
+        <member name="P:ScienceSlam.LoginPageModel.Login">
+            <inheritdoc cref="F:ScienceSlam.LoginPageModel._login"/>
+        </member>
+        <member name="P:ScienceSlam.LoginPageModel.Password">
+            <inheritdoc cref="F:ScienceSlam.LoginPageModel._password"/>
+        </member>
+        <member name="F:ScienceSlam.LoginPageModel.moveToMainPageCommand">
+            <summary>The backing field for <see cref="P:ScienceSlam.LoginPageModel.MoveToMainPageCommand"/>.</summary>
+        </member>
+        <member name="P:ScienceSlam.LoginPageModel.MoveToMainPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ScienceSlam.LoginPageModel.MoveToMainPage"/>.</summary>
+        </member>
+        <member name="P:ScienceSlam.MainViewModel.Items">
+            <inheritdoc cref="F:ScienceSlam.MainViewModel.items"/>
+        </member>
+        <member name="P:ScienceSlam.MainViewModel.Text">
+            <inheritdoc cref="F:ScienceSlam.MainViewModel._text"/>
+        </member>
+        <member name="F:ScienceSlam.MainViewModel.moveToRegistrationPageCommand">
+            <summary>The backing field for <see cref="P:ScienceSlam.MainViewModel.MoveToRegistrationPageCommand"/>.</summary>
+        </member>
+        <member name="P:ScienceSlam.MainViewModel.MoveToRegistrationPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ScienceSlam.MainViewModel.MoveToRegistrationPage"/>.</summary>
+        </member>
+        <member name="F:ScienceSlam.MainViewModel.moveToCurrentEventPageCommand">
+            <summary>The backing field for <see cref="P:ScienceSlam.MainViewModel.MoveToCurrentEventPageCommand"/>.</summary>
+        </member>
+        <member name="P:ScienceSlam.MainViewModel.MoveToCurrentEventPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ScienceSlam.MainViewModel.MoveToCurrentEventPage"/>.</summary>
+        </member>
+        <member name="P:ScienceSlam.VotePageModel.Parameter">
+            <inheritdoc cref="F:ScienceSlam.VotePageModel._parameter"/>
+        </member>
+        <member name="F:ScienceSlam.VotePageModel.goToMainPageCommand">
+            <summary>The backing field for <see cref="P:ScienceSlam.VotePageModel.GoToMainPageCommand"/>.</summary>
+        </member>
+        <member name="P:ScienceSlam.VotePageModel.GoToMainPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ScienceSlam.VotePageModel.GoToMainPage"/>.</summary>
+        </member>
+        <member name="F:ScienceSlam.VotePageModel.voteForParamCommand">
+            <summary>The backing field for <see cref="P:ScienceSlam.VotePageModel.VoteForParamCommand"/>.</summary>
+        </member>
+        <member name="P:ScienceSlam.VotePageModel.VoteForParamCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:ScienceSlam.VotePageModel.VoteForParam(System.String)"/>.</summary>
+        </member>
+        <member name="F:ScienceSlam.VotePageModel.sendDataCommand">
+            <summary>The backing field for <see cref="P:ScienceSlam.VotePageModel.SendDataCommand"/>.</summary>
+        </member>
+        <member name="P:ScienceSlam.VotePageModel.SendDataCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ScienceSlam.VotePageModel.SendData"/>.</summary>
+        </member>
+    </members>
+</doc>

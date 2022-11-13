@@ -1,0 +1,58 @@
+﻿<Properties StartupConfiguration="{F3085EE8-4D41-420C-B4E8-9DD9799EA728}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ScienceSlam PreferredExecutionTarget="Android.pixel_4a_-_api_33" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_4a_-_api_33" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.1.0.1" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ScienceSlam/AlternativeSpeaker.xaml.cs">
+    <Files>
+      <File FileName="ScienceSlam/MainPage.xaml.cs" />
+      <File FileName="ScienceSlam/MainPage.xaml" />
+      <File FileName="ScienceSlam/CurrentEventPage.xaml" Line="29" Column="26" />
+      <File FileName="ScienceSlam/LoginPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="ScienceSlam/LoginPage.xaml" Line="1" Column="1" />
+      <File FileName="ScienceSlam/CurrentEventPage.xaml.cs" />
+      <File FileName="ScienceSlam/AppShell.xaml" />
+      <File FileName="ScienceSlam/AppShell.xaml.cs" Line="13" Column="81" />
+      <File FileName="ScienceSlam/ViewModel/CurrentEventPageModel.cs" />
+      <File FileName="ScienceSlam/ViewModel/LoginPageModel.cs" />
+      <File FileName="ScienceSlam/ViewModel/MainViewModel.cs" Line="24" Column="38" />
+      <File FileName="ScienceSlam/MauiProgram.cs" Line="30" Column="10" />
+      <File FileName="ScienceSlam/App.xaml" Line="1" Column="1" />
+      <File FileName="ScienceSlam/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="ScienceSlam/Resources/Styles/Styles.xaml" />
+      <File FileName="ScienceSlam/Resources/Styles/Colors.xaml" />
+      <File FileName="ScienceSlam/Properties/launchSettings.json" />
+      <File FileName="ScienceSlam/VotePage.xaml" Line="294" Column="16" />
+      <File FileName="ScienceSlam/VotePage.xaml.cs" Line="1" Column="1" />
+      <File FileName="ScienceSlam/ViewModel/VotePageModel.cs" Line="1" Column="1" />
+      <File FileName="ScienceSlam/ScienceSlam.csproj" Line="1" Column="1" />
+      <File FileName="ScienceSlam/CurrentEventAlt.xaml" Line="4" Column="34" />
+      <File FileName="ScienceSlam/EventResults.xaml" />
+      <File FileName="ScienceSlam/EventResults.xaml.cs" />
+      <File FileName="ScienceSlam/ViewModel/CurrentEventPageAltModel.cs" />
+      <File FileName="ScienceSlam/CurrentEventAlt.xaml.cs" Line="7" Column="14" />
+      <File FileName="ScienceSlam/AlternativeSpeaker.xaml" Line="4" Column="53" />
+      <File FileName="ScienceSlam/AlternativeSpeaker.xaml.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ScienceSlam" expanded="True">
+            <Node name="ScienceSlam" expanded="True">
+              <Node name="Platforms" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True" />
+              <Node name="ViewModel" expanded="True" />
+              <Node name="AlternativeSpeaker.xaml.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
