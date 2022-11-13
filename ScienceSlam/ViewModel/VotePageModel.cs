@@ -6,18 +6,12 @@ namespace ScienceSlam
 	public partial class VotePageModel : ObservableObject
 	{
         [ObservableProperty]
-        private string _parameter;
+        private string _parameterName;
 
 		[RelayCommand]
-        async Task GoToMainPage()
+        async Task MoveToMainPage()
         {
             await Shell.Current.GoToAsync("..");
-        }
-
-        [RelayCommand]
-        private void VoteForParam(string s)
-        {
-
         }
 
         [RelayCommand]

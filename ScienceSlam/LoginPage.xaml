@@ -70,9 +70,6 @@
                 FontSize="Title"
                 CornerRadius="15"
                 />
-
-            
-
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

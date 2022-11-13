@@ -72,8 +72,9 @@
         FontSize="Title"
         Grid.Row="3"/>-->
 
-    <Label Text="Прошедшие события" FontSize="34"             FontFamily="PoppinsRegularSemibold"
-            FontAttributes="Bold"/>
+    <Label Text="Прошедшие события" FontSize="34"
+           FontFamily="PoppinsRegularSemibold"
+           FontAttributes="Bold"/>
 
     <CollectionView Grid.Row="4" Grid.ColumnSpan="5">
         <CollectionView.ItemsSource>

@@ -4,7 +4,7 @@
     {
         public CurrentEventAlt(CurrentEventPageAltModel cpam)
         {
-           // InitializeComponent();
+            // InitializeComponent(); //InitializeComponent() does not found...
             BindingContext = cpam;
         }
     }
